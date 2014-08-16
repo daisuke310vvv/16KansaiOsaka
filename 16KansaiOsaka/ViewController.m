@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -18,6 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"hoge");
+}
+- (IBAction)tappedBtn:(id)sender {
+    
+    self.label.text = @"最高の夏に！";
+    
 }
 
 - (void)didReceiveMemoryWarning
